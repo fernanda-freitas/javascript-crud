@@ -7,7 +7,7 @@ const socialMedia = {
   posts: [
     {
       id: 1,
-      owner: "fernandafreias",
+      owner: "fernandafreitas",
       content: "First post"
     }
   ]
