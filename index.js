@@ -30,7 +30,7 @@ function getPosts() {
 // UPDATE
 function updatePostContent(id, content) {
   const findPost = getPosts().find((post) => {
-    return post.id !== id;
+    return post.id !== id -1;
   })
   return findPost.content = content;
 }
@@ -49,7 +49,7 @@ createPost({owner: "fernandafreitas", content: "Third post"});
 createPost({owner: "fernandafreitas", content: "Fourth post"});
 
 // Updating content from Second Post
-updatePostContent(2, "Updated post content");
+updatePostContent(2, "Updated second post");
 
 // Deleting First Post
 deletePost(1);
